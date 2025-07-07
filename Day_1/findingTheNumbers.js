@@ -12,7 +12,7 @@ const findLargest = (arr) => {
 
 const arr = [20, 30, 60, 78, 48, 90];
 
-console.log(findLargest(arr))
+// console.log(findLargest(arr))
 
 //90
 
@@ -21,6 +21,24 @@ console.log(findLargest(arr))
 //Alternative and Builtin function for find max value in an array
 let largest = Math.max(...arr);
 
-console.log(largest)
+// console.log(largest)
 
 //90
+
+//find how many negative values and positive values are there in an array
+
+
+
+const countNums=(arr)=>{
+    let Nums=[]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]<0){
+            Nums.push(arr[i])
+        }
+    }
+    return Nums.length
+}
+
+const array=[-10,0,30,50,-70]
+
+console.log(countNums(array))
