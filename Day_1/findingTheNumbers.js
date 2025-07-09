@@ -14,6 +14,7 @@ const arr = [20, 30, 60, 78, 48, 90];
 
 // console.log(findLargest(arr))
 
+// this returns
 //90
 
 
@@ -23,6 +24,7 @@ let largest = Math.max(...arr);
 
 // console.log(largest)
 
+//this returns
 //90
 
 //find how many negative values and positive values are there in an array
