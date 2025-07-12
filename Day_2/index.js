@@ -3,12 +3,14 @@ const add = (arr) => {
   let firstLargestNum = -Infinity;
   let secondLargestNum = -Infinity;
 
-  //
+  //intialized the loop
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > firstLargestNum) {
-      secondLargestNum = firstLargestNum;
-      firstLargestNum = arr[i];
+      // checking if array of i (i=0) is greater than firstLargestNum (firstLargestNum is -Infinity in this case)
+      secondLargestNum = firstLargestNum; // if not then push the first largest value to second largest value
+      firstLargestNum = arr[i]; // then increment the value of firstlargest value to arr[i]
     } else if (arr[i] > secondLargestNum) {
+      // if not then add that to second largest value
       secondLargestNum = arr[i];
     }
   }
